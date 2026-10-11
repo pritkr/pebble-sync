@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+*.tsbuildinfo
+
+# test / coverage output
+coverage/
+*.lcov
+
+# environments
+.env
+.env.*
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/

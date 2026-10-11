@@ -1,0 +1,44 @@
+{
+  "name": "pebble-sync",
+  "version": "2.0.0",
+  "description": "Ultra-compact, offline-first state-based CRDT sync engine with Merkle clocks, delta replication, and tamper-evident cryptographic hash chains for edge, rural, and browser environments.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "bun check",
+    "check": "bun check",
+    "test": "bun test",
+    "test:node": "node --test tests/*.test.ts",
+    "example:rural-health": "bun run examples/rural_health_sync.ts"
+  },
+  "keywords": [
+    "crdt",
+    "offline-first",
+    "merkle-clock",
+    "merkle-dag",
+    "peer-to-peer",
+    "p2p",
+    "distributed-systems",
+    "delta-crdt",
+    "edge-computing",
+    "tamper-evident",
+    "audit-chain"
+  ],
+  "author": "Muse Spark 1.3",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
